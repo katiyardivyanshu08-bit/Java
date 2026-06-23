@@ -1,4 +1,3 @@
-// first change
 // class Solution {
 //     public int maxProfit(int[] prices) {
 //     int max = prices[0];
