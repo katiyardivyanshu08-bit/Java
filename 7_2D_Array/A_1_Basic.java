@@ -3,6 +3,8 @@
 //    }
 // }
 
+package MultiDimensionalArrays;
+
 import java.util.Scanner;
 
 public class A_1_Basic {
@@ -47,5 +49,6 @@ public class A_1_Basic {
       //       }
       //    System.out.println();
       //   }
+      sc.close();
    } 
 }
