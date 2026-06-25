@@ -5,6 +5,9 @@ public class A_1_arraylist {
         ArrayList<Integer> arr = new ArrayList<>();
         // charter
         // ArrayList<Character> arr1 = new ArrayList<>();
+        
+        
+        //arr.contains(5) retrun true or false  is 5 num in a list or not
 
         arr.add(25);
         arr.add(12);

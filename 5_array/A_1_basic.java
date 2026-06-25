@@ -2,6 +2,7 @@
 // int [] ar = new int[7];
 
 // input array
+
 import java.util.*;
 public class A_1_basic {
     public static void main(String[] args) {
@@ -34,9 +35,10 @@ public class A_1_basic {
             int x = sc.nextInt();
             a[i]=x;
         }
-        for(int i=0 ; i<a.length;i++){
-            System.out.print(a[i]+" ");
-        }
+        System.out.print(Arrays.toString(a));
+        // for(int i=0 ; i<a.length;i++){
+        //     System.out.print(a[i]+" ");
+        // }
         sc.close();
      }
 }
