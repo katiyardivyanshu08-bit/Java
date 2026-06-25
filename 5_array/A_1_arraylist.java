@@ -13,7 +13,8 @@ public class A_1_arraylist {
         arr.add(12);
         arr.add(9);
         
-        arr.add(1,100);
+        arr.add(1,100); //add
+        arr.set(1,50); //replace
         
         arr.add(19);
         // len
