@@ -1,8 +1,3 @@
-// public class A_1_Basic {
-//    public static void main(String[] args) {
-//    }
-// }
-
 package MultiDimensionalArrays;
 
 import java.util.Scanner;
