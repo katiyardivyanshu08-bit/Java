@@ -1,29 +1,38 @@
 public class A_8_pyramid {
     public static void main(String[] args) {
-    int n = 3;
-    int l=2*n+1;
-    int nsp=l/2;    //3
-    int nst=1;
-    int ml=(l/2)+1; //4
-    for(int i=1;i<=l;i++){  
-        for(int j=1;j<=nsp;j++) {   
-            System.out.print(" ");
-          }
+        int row = 5;
+        int psp=row-1; 
+        int pst=1;
+        for(int i=1;i<=row;i++){
+            // pyramid and revrse tri both
+            for(int j=1;j<=psp;j++){        
+                  System.out.print("  ");
+            }
+            
+            for(int j=1;j<=pst;j++){   
+                       
+                System.out.print(j+" ");
+            }
 
-        for(int k=1;k<=nst;k++){
-            System.out.print("*");
-        }  
-        if(i<ml){
-            nsp--;
-            nst+=2;
+            //or
+            // for(int j=1;j<=row-i;j++){        
+            //       System.out.print("  ");
+            // }
+            
+            // for(int j=1;j<=2*i+1;j++){          
+            //     System.out.print("* ");
+            // }
+
+            //or
+            // for(int j=1;j<=i;j++){           //star
+            //     System.out.print("* ");
+            // }
+            // for(int j=2;j<=i;j++){
+            //     System.out.print("* ");
+            // }
+        psp--;
+        pst=pst+2; 
+        System.out.println();
         }
-        else {
-            nsp++;
-            nst-=2;
-        }
-      
-       System.out.println();
-     
     }
-}
 }
