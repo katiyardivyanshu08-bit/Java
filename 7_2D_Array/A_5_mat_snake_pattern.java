@@ -1,4 +1,3 @@
-package MultiDimensionalArrays;
 public class A_5_mat_snake_pattern {
    public static void main(String[] args) {
           int [][] arr = {{1,2,3},{4,5,6},{7,8,9},{12,4,5}};

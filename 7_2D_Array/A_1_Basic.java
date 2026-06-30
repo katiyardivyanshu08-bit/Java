@@ -1,5 +1,3 @@
-package MultiDimensionalArrays;
-
 import java.util.Scanner;
 
 public class A_1_Basic {

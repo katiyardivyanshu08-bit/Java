@@ -1,4 +1,3 @@
-package MultiDimensionalArrays;
 public class A_4_for_each{
     public static void main(String[] args) {
     int [][] arr = {{1,4,2,9},{9,5,3,4},{0,7,8,3}};
