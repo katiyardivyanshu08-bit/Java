@@ -20,8 +20,11 @@ public class A_1_2D_arrList {
                 arr.add(d);
                 //[[3, 4, 5, 6], [2, 3, 8, 7], [1, 6, 7, 9], []]
                 //System.out.println(arr.get(1).get(1)); //3
-                arr.get(0).set(1,3);  //insert
+                arr.get(0).set(1,3);  //insert if the array list not empty other wise use add
                 arr.get(1).add(10);                // add
+
+                arr.get(2).add(1,5);
+
                 arr.add(new ArrayList<>());                 // adding empty array list in the end 
 
                 arr.get(arr.size()-1).add(10);
@@ -41,6 +44,7 @@ public class A_1_2D_arrList {
             // System.out.println();
             // }
           
+            // pascal triangle
 
     }
 }

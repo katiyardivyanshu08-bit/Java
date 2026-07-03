@@ -19,7 +19,7 @@ public class A_1_Multi {
 
         for(int i=0;i<rowA;i++){
             for(int j=0;j<colB;j++){
-                for(int k=0;k<colA;k++){
+                for(int k=0;k<colA;k++){   // colA=rowB  (matrix multiplication rule)
                     C[i][j]+=A[i][k]*B[k][j];
                 }
             }
