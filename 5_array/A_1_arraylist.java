@@ -36,6 +36,9 @@ public class A_1_arraylist {
 
         //reverse
         Collections.reverse(arr);
+
+        //sort
+        Collections.sort(arr);
         
         //or
         // int i =0 ;

@@ -67,7 +67,7 @@ public class A_2_Nth_LArgest_Element {
         System.out.print("Enter  : ");
         int x = sc.nextInt();
 
-        // Sort
+        //Bubble Sort
         System.out.print("Sorted List : ");
         for(int i=0 ; i<a.length;i++){
             for(int j=i+1 ; j<a.length;j++){
