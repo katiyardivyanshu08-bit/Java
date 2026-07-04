@@ -1,5 +1,5 @@
 // import java.util.Scanner;
-// public class A_2_Nth_LArgest_Element {
+// public class A_2_Kth_LArgest_Element {
 //     public static void main(String[] args) {
 //         int [] a = {1,3,2,6,5,6};
 //         int fmax = Integer.MIN_VALUE ;
@@ -59,9 +59,9 @@
     // }
 
 import java.util.Scanner;
-public class A_2_Nth_LArgest_Element {
+public class A_2_Kth_LArgest_Element {
     public static void main(String[] args) {
-        int [] a = {1,8,8,8,8,8,7,7};
+        int [] a = {1,8,8,7,6,8,8,8,7,7};
         int [] b = new int[a.length];
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter  : ");
@@ -84,6 +84,15 @@ public class A_2_Nth_LArgest_Element {
 
 
         // Remove Duplicates
+        // b[0]=a[0]; /// wrong
+        // int j = 0;
+        // for (int i = 1; i < a.length; i++) {
+        //     if (a[i] != a[j]) {
+        //         j++;
+        //         b[j] = a[i];
+        //     }
+        // }
+        //or
         int k=0;
         b[k++]=a[0];
         for(int i=1 ; i<a.length ; i++){
