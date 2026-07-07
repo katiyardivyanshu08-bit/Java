@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "A_1_bubble_sort",
+            "request": "launch",
+            "mainClass": "A_1_bubble_sort",
+            "projectName": "Java 6-7-26_94efda8d"
+        },
+        {
+            "type": "java",
+            "name": "A_11_union_two_sorted",
+            "request": "launch",
+            "mainClass": "A_11_union_two_sorted",
+            "projectName": "Java 6-7-26_94efda8d"
+        },
+        {
+            "type": "java",
             "name": "A_1_rect",
             "request": "launch",
             "mainClass": "A_1_rect",

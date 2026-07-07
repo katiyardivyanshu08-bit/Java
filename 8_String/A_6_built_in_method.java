@@ -4,6 +4,8 @@ public class A_6_built_in_method {
         // System.out.println(s.indexOf('a'));  // first occurance return 
         // System.out.println(s.lastIndexOf("a"));  // if not return -1
 
+        // System.out.println(s.replace(":",""));
+
         // System.out.println(s.contains("kat"));  // true
 
         // System.out.println(s.startsWith("rat"));

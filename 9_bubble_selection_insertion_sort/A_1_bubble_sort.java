@@ -2,7 +2,9 @@ public class A_1_bubble_sort {
     public static void main(String[] args) {
         int [] a = {1,5,8,-6,4,-8,4,8,-2,3};
         int n = a.length ;
-        
+        //repeatedly swap adjacent element
+        // stable like two elemnt same 7a and 7b when sort it same order
+        // best case -> O(n) and remaining O(n2)
         for(int i=0 ; i<n;i++){
             int swap =0;
             for(int j=i+1 ; j<n;j++){  // best case  mai O(n) although it is a O(n2)
