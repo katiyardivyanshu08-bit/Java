@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "A_6_rev_num",
+            "request": "launch",
+            "mainClass": "A_6_rev_num",
+            "projectName": "Java 6-7-26_94efda8d"
+        },
+        {
+            "type": "java",
             "name": "A_1_bubble_sort",
             "request": "launch",
             "mainClass": "A_1_bubble_sort",
