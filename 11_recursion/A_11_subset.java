@@ -4,6 +4,7 @@ public class A_11_subset {  //substring->continuous no {''} , subset->also {''} 
         String str = "ab";
         List<String> list = new ArrayList<>();
         subset(str,"",0 , list);
+        Collections.sort(list);
         System.out.print(list); 
           
    }
