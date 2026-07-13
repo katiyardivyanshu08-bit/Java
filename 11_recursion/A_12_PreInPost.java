@@ -1,6 +1,6 @@
 public class A_12_PreInPost {
     public static void main(String[] args) {
-        pip(2);
+        pip(3);
     }
     public static void pip(int n){
         if(n==0) return;
