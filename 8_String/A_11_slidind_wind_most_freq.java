@@ -1,44 +1,46 @@
 import java.util.*;
 public class A_11_slidind_wind_most_freq {
    public static void main(String[] args) {
-        String s="cutout";
-        int t=-1;
-        int [] arr = new int[26];
-        for(int i=0 ; i<s.length();i++){
-            arr[s.charAt(i)-'a']++;
+       String s="cutout";
+        int n = s.length();
+        int maxFreq = -1;
+        char ans = s.charAt(0);
+        char[] arr = s.toCharArray();
+        Arrays.sort(arr);
+        int i=0, j=0;
+        while(j<n){
+            if(arr[i]==arr[j]) j++;
+            else{
+                int freq = j-i;
+                if(freq > maxFreq){
+                    maxFreq = freq;
+                    ans = arr[i];
+                }
+                i = j;
+            }
         }
-        int max =Integer.MIN_VALUE;
-        for(int i=0;i<26;i++){
-        if(arr[i]>max) {
-            max=arr[i];
-            t=i;
+        int freq = j-i;
+        if(freq > maxFreq){
+            maxFreq = freq;
+            ans = arr[i];
         }
-        }
-        System.out.println((char)(97+t));
+           System.out.println(ans);
         
-        // int n = s.length();
-        // int maxFreq = -1;
-        // char ans = s.charAt(0);
-        // char[] arr = s.toCharArray();
-        // Arrays.sort(arr);
-        // int i=0, j=0;
-        // while(j<n){
-        //     if(arr[i]==arr[j]) j++;
-        //     else{
-        //         int freq = j-i;
-        //         if(freq > maxFreq){
-        //             maxFreq = freq;
-        //             ans = arr[i];
-        //         }
-        //         i = j;
-        //     }
+        // sir tecnique
+        // int t=-1;
+        // int [] arr = new int[26];
+        // for(int i=0 ; i<s.length();i++){
+        //     arr[s.charAt(i)-'a']++;
         // }
-        // int freq = j-i;
-        // if(freq > maxFreq){
-        //     maxFreq = freq;
-        //     ans = arr[i];
+        // int max =Integer.MIN_VALUE;
+        // for(int i=0;i<26;i++){
+        // if(arr[i]>max) {
+        //     max=arr[i];
+        //     t=i;
         // }
-        //    System.out.println(ans);
+        // }
+        // System.out.println((char)(97+t));
+        
         
         
         // int n = s.length();
