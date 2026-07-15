@@ -1,25 +1,26 @@
 public class A_1_basic {
    // o(n) and sc=>o(1)
-   // work only for 0 to n or 1 to n
-   // qs like missing element , 
-   public static void cyclicSort(int[] arr){
+   // not neg work only for 0 to n or 1 to n or n-1 etc
+   // qs like (missing element , 287 ,442 ,448,645,41 hard
+   public static void cyclicSort(int[] nums){
+        int n=nums.length;
         int i=0;
-        while(i<arr.length){
-            int correct=arr[i];
-            if(arr[i]!=arr[correct]){
-                int temp=arr[i];
-                arr[i]=arr[correct];
-                arr[correct]=temp;
+        while(i<n){
+            int correct=nums[i]; // including 0 and nums[i]-1 for st from 1 
+            if(nums[i]!=nums[correct]){
+                int temp=nums[i];
+                nums[i]=nums[correct];
+                nums[correct]=temp;
             }
             else i++;
         }
     }
 
     public static void main(String[] args){
-        int[] arr={3,5,2,1,4,0};
-        cyclicSort(arr);
+        int[] nums={3,5,2,1,4,0};
+        cyclicSort(nums);
 
-        for(int i=0;i<arr.length;i++) System.out.print(arr[i]+" ");
+        for(int i=0;i<nums.length;i++) System.out.print(nums[i]+" ");
     }
 }
 

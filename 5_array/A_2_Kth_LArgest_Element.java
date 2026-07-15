@@ -83,7 +83,7 @@ public class A_2_Kth_LArgest_Element {
         System.out.print('\n');
 
 
-        // Remove Duplicates
+        // Remove Duplicates and 26 and 41
         // b[0]=a[0]; /// wrong
         // int j = 0;
         // for (int i = 1; i < a.length; i++) {
