@@ -1,6 +1,7 @@
+import java.util.* ;
 public class A_9_stringBuilder {
     public static void main(String[] args) {
-        StringBuilder s = new StringBuilder("ram"); //StringBuilder()
+        // StringBuilder s = new StringBuilder("ram"); //StringBuilder()
         // System.out.println(s.length()+" "+s.capacity());
         // s.append("Raghav");
         // System.out.println(s.length()+" "+s.capacity());
@@ -18,13 +19,18 @@ public class A_9_stringBuilder {
         // s.insert(1, 'a');
         // System.out.println(s);
         //reverse
-        s.reverse();
-        System.out.println(s);
+        // s.reverse();
+        // System.out.println(s);
 
 
         // String t = s.toString(); //object to string
         // System.out.println(t);
 
+        //input
+        Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder(sc.nextLine());
+        System.out.println(sb); 
 
+        sc.close();
     }
 }
