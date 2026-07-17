@@ -1,0 +1,40 @@
+🔴 Java File Name Rules
+---------------------------------------
+class Student
+→ Default (package-private) access.
+public class Student
+→ Public access.
+No keyword
+→ Java automatically uses default access.
+-----------------------------------------
+
+1. One .java file
+   ➜ Only ONE top-level public class is allowed. ✅
+2. If a public class exists
+   ➜ File name = Public class name.
+Example:
+public class Main { }
+File Name:
+✅ Main.java
+❌ Student.java
+
+3. If NO public class exists
+   ➜ File name can be anything.
+Example:
+class Student { }
+class Car { }
+File Name:
+✅ Student.java
+✅ Car.java
+✅ abc.java
+✅ hello.java
+
+4. Two public top-level classes
+public class Student { }
+public class Main { }
+❌ Not Allowed
+Reason: One .java file cannot contain two top-level public classes.
+
+5. Who decides the file name?
+✅ Programmer (You)
+Java only checks whether your file name follows the above rules.
