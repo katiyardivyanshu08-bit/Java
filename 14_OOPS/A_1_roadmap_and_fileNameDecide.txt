@@ -1,3 +1,43 @@
+⭐⭐⭐⭐⭐
+1. Class & Object
+2. Constructor
+3. this
+4. static
+5. final
+6. Encapsulation
+7. Inheritance
+8. protected
+9. Abstraction
+10. Interface
+11. Polymorphism
+
+
+--------------------------------------------------
+ATM
+Encapsulation
+─────────────
+Hide:
+PIN
+Balance
+Account Number
+
+Abstraction
+───────────
+Hide:
+How money is verified
+How the bank server works
+How cash is counted
+How security checks happen
+----------------------------------------------------------
+
+Inheritance is a mechanism in which a child class acquires the variables and methods
+ of a parent class using the extends keyword. This helps reduce code 
+ duplication (redundancy) and promotes code reusability.
+
+
+
+
+
 🔴 Java File Name Rules
 ---------------------------------------
 class Student
