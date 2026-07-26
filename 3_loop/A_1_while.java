@@ -11,7 +11,7 @@ public class A_1_while {
         //     System.out.println();
         // }
 
-        // //while
+        // //while   // if we know the condition but dont know how much length 
         // int i = 1;
         // while (i <= 5) {
         //     System.out.println(i);

@@ -24,15 +24,15 @@
 // st->head and last->tail
 
 
-public class A_1_basic {
-    static class Node {
+class Node {
         int val;
         Node next; // null
 
         Node(int val) {
             this.val = val;
         }
-    }
+}
+public class A_1_basic {
     public static void main(String[] args) {
          // 10->20->30->40->50
         Node a = new Node(10); // head node
