@@ -23,6 +23,24 @@
 // null means this node is not connected to any next node because its next reference points to nothing." ✅
 // st->head and last->tail
 
+// Limition and pro
+// Access           O(n)
+// Search           O(n)
+// Traversal        O(n)
+
+// Insert Head      O(1)
+// Delete Head      O(1)
+
+// Insert Tail
+// (with tail)      O(1)
+// (without tail)   O(n)
+
+// Delete Tail      O(n)
+
+// Reverse
+// Iterative        O(n), AC = O(1)
+// Recursive        O(n), AC = O(n)
+
 
 class Node {
         int val;
