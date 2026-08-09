@@ -41,6 +41,25 @@
 // Iterative        O(n), AC = O(1)
 // Recursive        O(n), AC = O(n)
 
+// -----------------------------------------------------------------
+// j.next = i;      Changes the connection: j stays on its node, but j's next points to i's node.
+// Example: j → [5] , i → [10] → [20]
+// After:  print j → [5] → [10] → [20]
+
+// j = i.next;      Changes j's reference: j moves to i's next node; no connection is changed.
+// Example: j -> [5] i → [10] → [20] → [30]
+// After:  i → [10] → [20] → [30]
+//                    ↑
+//                    j
+// print j -> [20] → [30]
+//---------------------------------------------------------------------------
+
+// j = i.next;   // next node ka reference
+// j = i;        // reference/address
+// j = i.val;    // value (but types must match)
+
+//--------------------------------------------------------------------------------
+
 
 class Node {
         int val;
