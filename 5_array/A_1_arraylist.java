@@ -1,10 +1,14 @@
 import java.util.*;
 public class A_1_arraylist {
+    //Integer -> object so use equals(comapre values) ref(==)
     public static void main(String[] args) {
         // it is used for dynamic array -> we dont give the size of array 
         ArrayList<Integer> arr = new ArrayList<>();
         // charter
         // ArrayList<Character> arr1 = new ArrayList<>();
+        
+        // any type of data store
+        // ArrayList<Object> arr = new ArrayList<>();
         
         
         //arr.contains(5) retrun true or false  is 5 num in a list or not

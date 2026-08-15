@@ -52,6 +52,9 @@
 //                    ↑
 //                    j
 // print j -> [20] → [30]
+
+// easy way -> t1.next = t;      // 🔗 CONNECT t after t1
+//             t1 = t1.next;     // 👉 MOVE t1 to the next node
 //---------------------------------------------------------------------------
 
 // j = i.next;   // next node ka reference
@@ -59,7 +62,8 @@
 // j = i.val;    // value (but types must match)
 
 //--------------------------------------------------------------------------------
-
+// i.next=null (null is address(node) m store hota h)
+// [1|null]->node
 
 class Node {
         int val;
