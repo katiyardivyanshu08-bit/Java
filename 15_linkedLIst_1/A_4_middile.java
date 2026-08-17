@@ -1,6 +1,7 @@
 // class A_4_Middle{
+
 //         // slow fast approch
-  
+
 //     // Middle (if  list is even -> right middle)
 //         ListNode slow = head;
 //         ListNode fast = head;
