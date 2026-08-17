@@ -1,35 +1,35 @@
-class A_4_Middle{
-        // slow fast approch
+// class A_4_Middle{
+//         // slow fast approch
   
-    // Middle (if  list is even -> right middle)
-        ListNode slow = head;
-        ListNode fast = head;
-        while(fast != null && fast.next != null){
-            // (fast.next!=null && fast!=null) 
-            // wrong because -> even(null ka next nahi hota)
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-        ListNode middle = slow;
+//     // Middle (if  list is even -> right middle)
+//         ListNode slow = head;
+//         ListNode fast = head;
+//         while(fast != null && fast.next != null){
+//             // (fast.next!=null && fast!=null) 
+//             // wrong because -> even(null ka next nahi hota)
+//             slow = slow.next;
+//             fast = fast.next.next;
+//         }
+//         ListNode middle = slow;
         
-       // left Middle
-        ListNode slow = head;
-        ListNode fast = head;
-        ListNode left = null;
-        while(fast != null && fast.next != null){
-            left = slow;
-            slow = slow.next;
-            fast = fast.next.next;
-        }
+//        // left Middle
+//         ListNode slow = head;
+//         ListNode fast = head;
+//         ListNode left = null;
+//         while(fast != null && fast.next != null){
+//             left = slow;
+//             slow = slow.next;
+//             fast = fast.next.next;
+//         }
         
-        // right middle
-        ListNode slow = head;
-        ListNode fast = head;
-        while(fast != null && fast.next != null){
-             slow = slow.next;
-            fast = fast.next.next;
-        }
-         ListNode right = slow.next; 
+//         // right middle
+//         ListNode slow = head;
+//         ListNode fast = head;
+//         while(fast != null && fast.next != null){
+//              slow = slow.next;
+//             fast = fast.next.next;
+//         }
+//          ListNode right = slow.next; 
 
         // // Not a ONE PASS solution
         // int length = 0;
@@ -43,5 +43,5 @@ class A_4_Middle{
         //     temp = temp.next;
         // }
         // return temp.data;
-    }
-}
+//     }
+// }
