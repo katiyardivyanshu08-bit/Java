@@ -6,7 +6,7 @@ public class A_2_selection_sort {
         // all O(n2)
         for(int i=0;i<n-1;i++) { //// k th sortest elemt replace n
             int min = Integer.MAX_VALUE, minindx = -1;
-            for(int j=i;j<n;j++) {
+            for(int j=i+1;j<n;j++) {
                 if (arr[j] < min) {
                     min = arr[j];
                     minindx = j;
@@ -19,7 +19,7 @@ public class A_2_selection_sort {
         //or
         // for(int i=n-1;i>=3;i--) { 
         //     int max = Integer.MIN_VALUE, maxindx = -1;
-        //     for(int j=i;j>=0;j--) {
+        //     for(int j=i+1;j>=0;j--) {
         //         if (arr[j] > max) {
         //             max = arr[j];
         //             maxindx = j;
