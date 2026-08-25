@@ -1,5 +1,4 @@
-public class A_5_1_Marks {
-    static class StudentData {
+class StudentData {
         String name;
         int rno;
         int[] marks;
@@ -14,6 +13,22 @@ public class A_5_1_Marks {
             marks = arr;
         }
     }
+public class A_5_1_Marks {
+    // static class StudentData {
+    //     String name;
+    //     int rno;
+    //     int[] marks;
+
+    //     // Create a new array
+    //     StudentData(int size) {
+    //         marks = new int[size];
+    //     }
+
+    //     // Store the reference of an existing array
+    //     StudentData(int[] arr) {
+    //         marks = arr;
+    //     }
+    // }
 
     public static void main(String[] args) {
         // New object with a new marks array of size 4
