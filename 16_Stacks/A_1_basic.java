@@ -31,7 +31,7 @@ public class A_1_basic {
         System.out.println(st.size());
         System.out.println(st); // A.S. = O(n)
 
-        st.pop();
+        st.pop(); // in O(1) 
         System.out.println(st + " " + st.size());
 
         System.out.println(st.peek());
