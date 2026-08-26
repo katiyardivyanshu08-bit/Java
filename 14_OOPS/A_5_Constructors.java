@@ -6,6 +6,7 @@ public class A_5_Constructors {
         Car(){ // default constructor (when new __() not pass parameter)
 
         }
+        // constructor overloading both (parametrised or non perametrise)
         // Parameterized Constructor => new Car(1200000,"Kia Sonet")  (Parameters passed)
         Car(String s, int x){          // field => instance(object) variable like (price and name)
             this.price = x;
