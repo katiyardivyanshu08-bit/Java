@@ -7,11 +7,19 @@ public class A_2_vowel {
         // t=t.toLowerCase();
         System.out.println(t); 
         int count=0;
-
+        String vowel="aeiouAEIOU";
         for(int i=0 ; i<t.length() ; i++){
-            if( t.charAt(i)=='a' || t.charAt(i)=='e' ||t.charAt(i)=='i' ||t.charAt(i)=='i' ||t.charAt(i)=='u' ){
-                    count++;
+           if(vowel.indexOf(t.charAt(i))!=-1){
+                count++;
             }
+            //or
+            // if( t.charAt(i)=='a' || 'e' || 'i' || 'o' || 'u' ){
+            //         count++;
+            // }
+            // or
+            // if( t.charAt(i)=='a' || t.charAt(i)=='e' ||t.charAt(i)=='i' ||t.charAt(i)=='i' ||t.charAt(i)=='u' ){
+            //         count++;
+            // }
 
         }
         System.out.println(count);
