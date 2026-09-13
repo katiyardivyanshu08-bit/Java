@@ -10,6 +10,34 @@
 // Undo/Redo, Browser Back button, Function Calls, Recursion, DFS, Backtracking,
 //  Bracket Matching, andExpression Evaluation.
 
+//------------------------------------------------------------------------------------------
+// monotonic STack -> Monotonic Stack We maintain an order (decreasing and increasing).
+
+// 1. Next Greater Element
+//         ↓
+// 2. Next Smaller Element
+//         ↓
+// 3. Previous Greater/Smaller
+//         ↓
+// 4. Stock Span
+//         ↓
+// 5. Daily Temperatures
+//         ↓
+// 6. Largest Rectangle in Histogram
+// Without a monotonic stack, many of these can take O(n²).
+// With it, they can usually be solved in O(n).
+
+// | Problem            | What are we looking for? | Stack idea |
+// | ------------------ | ------------------------ | ---------- |
+// | Next Greater       | Greater on right         | Decreasing |
+// | Next Smaller       | Smaller on right         | Increasing |
+// | Previous Greater   | Greater on left          | Decreasing |
+// | Previous Smaller   | Smaller on left          | Increasing |
+// | Stock Span         | Previous greater         | Decreasing |
+// | Daily Temperatures | Warmer on right          | Decreasing |
+// | Histogram          | Smaller boundaries       | Increasing |
+
+
 import java.util.*;
 public class A_1_basic {
     public static void main(String[] args){
