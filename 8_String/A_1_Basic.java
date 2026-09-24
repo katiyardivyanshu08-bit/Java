@@ -26,5 +26,26 @@ public class A_1_Basic {
         // }
 
         sc.close();
+
+        // String → int
+int n = Integer.parseInt(str);
+
+// int → String
+String str = String.valueOf(n);
+
+// String → char
+char ch = str.charAt(0);
+
+// String → char[]
+char[] arr = str.toCharArray();
+
+// char[] → String
+String str = new String(arr);
+
+// String → StringBuilder
+StringBuilder sb = new StringBuilder(str);
+
+// StringBuilder → String
+String str = sb.toString();
    }
 }
