@@ -24,7 +24,7 @@ public class A_1_bubble_sort {
         // stable like two elemnt same 7a and 7b when sort it same order
         // best case -> O(n) and remaining O(n2)
         for(int i=0 ; i<n;i++){
-            int swap =false;
+            boolean swap =false;
             for(int j=0 ; j<n-i-1;j++){  // best case  mai O(n) although it is a O(n2)
                 if(a[j]>a[j+1]){
                     int temp = a[j] ;
