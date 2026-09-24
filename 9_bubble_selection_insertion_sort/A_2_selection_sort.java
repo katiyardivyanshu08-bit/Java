@@ -5,9 +5,9 @@ public class A_2_selection_sort {
         // find smallest element put in -> then decrese size from left
         // all O(n2)
         for(int i=0;i<n-1;i++) { //// k th sortest elemt replace n
-            int min = Integer.MAX_VALUE, minindx = -1;
+            int minindx = i;
             for(int j=i+1;j<n;j++) {
-                if (arr[j] < min) {
+                if (arr[j] < arr[minindx]) {
                     minindx = j;
                 }
             }
