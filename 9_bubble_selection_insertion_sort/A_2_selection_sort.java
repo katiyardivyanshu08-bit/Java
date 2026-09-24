@@ -15,19 +15,6 @@ public class A_2_selection_sort {
             arr[i] = arr[minindx];
             arr[minindx] = temp;
         }
-        //or
-        // for(int i=n-1;i>=3;i--) { 
-        //     int max = Integer.MIN_VALUE, maxindx = -1;
-        //     for(int j=i+1;j>=0;j--) {
-        //         if (arr[j] > max) {
-        //             max = arr[j];
-        //             maxindx = j;
-        //         }
-        //     }
-        //     int temp = arr[i];
-        //     arr[i] = arr[maxindx];
-        //     arr[maxindx] = temp;
-        // }
         for(int x : arr){
             System.out.print(x+" ");
         }
