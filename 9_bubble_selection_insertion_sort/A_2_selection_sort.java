@@ -8,7 +8,6 @@ public class A_2_selection_sort {
             int min = Integer.MAX_VALUE, minindx = -1;
             for(int j=i+1;j<n;j++) {
                 if (arr[j] < min) {
-                    min = arr[j];
                     minindx = j;
                 }
             }
