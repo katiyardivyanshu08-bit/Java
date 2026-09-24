@@ -37,18 +37,5 @@ public class A_1_bubble_sort {
             if(swap==false) break ;
         }
         for(int i:a) System.out.print(i+" ");
-
-
-        // for(int i=0 ; i<n;i++){
-        //     for(int j=0 ; j<n-i-1;j++){  // averge case ) worst case -> when j=0 to start
-        //         if(a[j]>a[j+1]){
-        //             int temp = a[j] ;
-        //             a[j] = a[j+1] ;
-        //             a[j+1] = temp ;
-        //         }
-                
-        //     }
-        //     System.out.print(a[i]+" ");
-        // }
     }
 }
