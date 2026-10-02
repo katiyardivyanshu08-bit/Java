@@ -42,7 +42,7 @@ import java.util.*;
 public class A_1_basic {
     public static void main(String[] args){
         Stack<String> st = new Stack<>();
-
+,
         // System.out.println(st.isEmpty()); //true
         // //or
         // System.out.println(st.size()==0); //true

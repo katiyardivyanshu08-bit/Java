@@ -46,6 +46,18 @@ String str = new String(arr);
 StringBuilder sb = new StringBuilder(str);
 
 // StringBuilder → String
-String str = sb.toString();
+// String str = sb.toString();
+// ------------------------------------------------
+// String s="Ram Shyam Kumar";
+// int count=0;
+
+// for(int i=0;i<s.length();i++){
+//     if(i==0 || s.charAt(i-1)==' '){
+//         if(s.charAt(i)>='A' && s.charAt(i)<='Z')
+//             count++;
+//     }
+// }
+
+// System.out.println(count);
    }
 }
