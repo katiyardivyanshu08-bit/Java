@@ -100,3 +100,71 @@ public class A_1_basic {
         System.out.println(a.next.next);//A_1_basic$Node@7ad041f3
     }
 }
+
+
+
+
+
+
+// gennric datatype
+// class node<T>{
+//     T val;
+//     node<T> next;
+    
+//     node(T val){
+//         this.val=val;
+//     }
+// }
+// Node<Integer> a = new Node<>(10);
+// Node<String> b = new Node<>("Hello");
+
+class Node{
+    int val;
+    Node next;
+    
+    Node(int val){
+        this.val=val;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Node a = new Node(10);
+		Node b = new Node(20);
+		Node c = new Node(30);
+		Node d = new Node(40);
+		a.next=b;
+		b.next=c;
+		c.next=d;
+		
+		Node temp=a;
+		int cnt=1;
+// 		while(temp!=null){
+// 		    System.out.print(temp.val+" ");
+// 		    temp=temp.next;
+// 		}
+// 		System.out.println();
+
+		while(cnt<2){
+		  //  System.out.print(temp.val+" ");
+		    temp=temp.next;
+		    cnt++;
+		}
+		temp.next=temp.next.next;
+	    temp=a;
+// 		System.out.println();
+		while(temp!=null){
+		    System.out.print(temp.val+" ");
+		    temp=temp.next;
+		}
+		System.out.println();
+		
+		
+// 		Node temp=a.next;
+// 		while(temp!=null){
+// 		    System.out.print(temp.val+" ");
+// 		    temp=temp.next;
+// 		}
+// 		System.out.println();
+	}
+}
